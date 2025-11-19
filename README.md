@@ -1,16 +1,237 @@
-## Hi there 👋
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colorado Materials Consulting (CMC)</title>
 
-<!--
-**colorado-materials-consulting/colorado-materials-consulting** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+    <!-- SEO básico -->
+    <meta name="description" content="Colorado Materials Consulting (CMC). Especialista en ingeniería de materiales, caracterización avanzada, polímeros, procesos industriales y gestión de calidad bajo estándares internacionales.">
+    <meta name="keywords" content="Colorado Materials Consulting, CMC, ingeniería de materiale![perfil-esteban jpg](https://github.com/user-attachments/assets/d704da6e-c283-4fa1-9498-747f7359a914)
+s, análisis de falla, caracterización de materiales, polímeros, nanomateriales, ISO 9001, IATF 16949, consultoría, San Luis Potosí">
+    <meta name="author" content="Dr. Esteban Uriel Colorado García">
 
-Here are some ideas to get you started:
+    <!-- Tipografías elegantes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: #0d0d0d;
+            color: #e6e6e6;
+            scroll-behavior: smooth;
+        }
+
+        /* --- MENÚ FIJO --- */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(20, 20, 20, 0.65);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            gap: 20px;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(212,175,55,0.3);
+        }
+
+        /* Botones del menú */
+        .tab-btn {
+            background: rgba(26,26,26,0.6);
+            border: 1px solid #d4af37;
+            padding: 10px 22px;
+            color: #d4af37;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        .tab-btn:hover {
+            background: #d4af37;
+            color: black;
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #d4af37;
+        }
+
+        header {
+            padding: 140px 20px 70px;
+            text-align: center;
+            background: linear-gradient(135deg, #1a1a1a, #222);
+            animation: fadeIn 1.2s ease;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: #d4af37;
+            margin-bottom: 10px;
+            animation: slideDown 1.2s ease;
+        }
+
+        h2 {
+            color: #cccccc;
+            font-weight: 400;
+        }
+
+        /* SECCIONES */
+        .section-title {
+            font-size: 2rem;
+            margin-top: 40px;
+            text-align: center;
+            color: #d4af37;
+            font-family: 'Playfair Display', serif;
+            animation: fadeIn 1s ease;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 40px;
+            max-width: 1100px;
+            margin: 40px auto;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            border: 1px solid rgba(212,175,55,0.3);
+            box-shadow: 0 0 20px rgba(212,175,55,0.1);
+            animation: fadeIn 1s ease;
+        }
+
+        /* TARJETAS Y EFECTOS */
+        ul li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: rgba(255,255,255,0.07);
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        ul li:hover {
+            transform: translateX(8px);
+            background: rgba(212,175,55,0.15);
+            box-shadow: 0 0 10px rgba(212,175,55,0.25);
+        }
+
+        /* FOTO + BIO LADO A LADO */
+        .perfil-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .perfil-img {
+            width: 260px;
+            border-radius: 25px;
+            border: 4px solid #d4af37;
+            box-shadow: 0 0 20px rgba(212,175,55,0.4);
+            transition: 0.3s;
+        }
+        .perfil-img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 35px rgba(212,175,55,0.6);
+        }
+
+        /* CONTACTO */
+        .contact {
+            padding: 40px;
+            text-align: center;
+            background: rgba(255,255,255,0.05);
+            border-top: 1px solid rgba(212,175,55,0.3);
+            margin-top: 60px;
+        }
+        .contact p {
+            margin: 8px;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            color: #777;
+            margin-top: 20px;
+        }
+
+        /* --- ANIMACIONES --- */
+        @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+        @keyframes slideDown { from {transform:translateY(-20px);} to {transform:translateY(0);} }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Dr. Esteban Uriel Colorado García</h1>
+        <h2>Technical Director – Colorado Materials Consulting (CMC)</h2>
+        <p>Advanced Materials • Quality • Engineering Process Solutions</p>
+    </header>
+
+    <nav style="display:flex; justify-content:center; margin-top:20px; gap:20px; padding:15px; background:#111; border-bottom:1px solid rgba(212,175,55,0.3);">
+        <button class="tab-btn" onclick="openTab('perfil')">Perfil</button>
+        <button class="tab-btn" onclick="openTab('servicios')">Servicios</button>
+        <button class="tab-btn" onclick="openTab('ubicacion')">Ubicación</button>
+        <button class="tab-btn" onclick="openTab('contacto')">Contacto</button>
+    </nav>
+
+    <!-- PERFIL PROFESIONAL -->
+    <div id="perfil" class="tab-content" style="display:block;">
+        <h2 class="section-title">Perfil Profesional</h2>
+
+        <div class="perfil-container">
+            <!-- IMPORTANTE: el archivo debe llamarse exactamente perfil-esteban.jpg -->
+            <img src="perfil-esteban.jpg" class="perfil-img" alt="Foto de Esteban Uriel Colorado García">
+
+            <div style="flex:1; min-width:260px;">
+                <p><strong>Esteban Uriel Colorado García</strong></p>
+                <p>Technical Director – Colorado Materials Consulting (CMC)</p>
+                <p>Especialista en ingeniería de materiales, caracterización avanzada, polímeros, procesos industriales y gestión de calidad bajo estándares internacionales.</p>
+                <p>Ha colaborado en proyectos para la industria automotriz, manufactura avanzada, investigación aplicada y optimización de procesos productivos.</p>
+            </div>
+        </div>
+
+        <h3 style="color:#d4af37; margin-top:35px;">Áreas de Especialidad</h3>
+        <ul>
+            <li>Polymers, Biopolymers, Nanomaterials & Composites</li>
+            <li>Failure Analysis & Materials Characterization</li>
+            <li>Industrial Processes & Continuous Improvement</li>
+            <li>Quality Systems — ISO 9001 / IATF 16949</li>
+        </ul>
+    </div>
+
+    <!-- SERVICIOS -->
+    <div id="servicios" class="tab-content">
+        <h2 class="section-title">Servicios</h2>
+        <ul>
+            <li>Consultoría técnica en ingeniería de materiales</li>
+            <li>Análisis de fallas y optimización de procesos</li>
+            <li>Implementación de sistemas de calidad</li>
+            <li>Selección, validación y caracterización de materiales</li>
+        </ul>
+    </div>
+
+    <!-- UBICACIÓN -->
+    <div id="ubicacion" class="tab-content">
+        <h2 class="section-title">Ubicación</h2>
+        <p><strong>Dirección:</strong> Insurgentes 865, El Montecillo, San Luis Potosí, S.L.P.</p>
+    </div>
+
+    <!-- CONTACTO -->
+    <div id="contacto" class="tab-content">
+        <h2 class="section-title">Información de Contacto</h2>
+        <p><strong>WhatsApp / Tel:</strong> +52 444 548 5528</p>
+        <p><strong>Email:</strong> estebanurielcguaslp1@gmail.com</p>
+    </div>
+
+    <footer>
+        © 2025 Colorado Materials Consulting (CMC). Todos los derechos reservados.
+    </footer>
+
+    <script>
+        function openTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.style.display = 'none');
+            document.getElementById(tabName).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+![perfil-esteban jpg](https://github.com/user-attachments/assets/01903ab8-2d70-4e93-b44c-b1331181276b)
+
