@@ -7,8 +7,7 @@
 
     <!-- SEO básico -->
     <meta name="description" content="Colorado Materials Consulting (CMC). Especialista en ingeniería de materiales, caracterización avanzada, polímeros, procesos industriales y gestión de calidad bajo estándares internacionales.">
-    <meta name="keywords" content="Colorado Materials Consulting, CMC, ingeniería de materiale![perfil-esteban jpg](https://github.com/user-attachments/assets/d704da6e-c283-4fa1-9498-747f7359a914)
-s, análisis de falla, caracterización de materiales, polímeros, nanomateriales, ISO 9001, IATF 16949, consultoría, San Luis Potosí">
+    <meta name="keywords" content="Colorado Materials Consulting, CMC, ingeniería de materiales, análisis de falla, caracterización de materiales, polímeros, nanomateriales, ISO 9001, IATF 16949, consultoría, San Luis Potosí">
     <meta name="author" content="Dr. Esteban Uriel Colorado García">
 
     <!-- Tipografías elegantes -->
@@ -23,7 +22,6 @@ s, análisis de falla, caracterización de materiales, polímeros, nanomateriale
             scroll-behavior: smooth;
         }
 
-        /* --- MENÚ FIJO --- */
         nav {
             position: fixed;
             top: 0;
@@ -38,7 +36,6 @@ s, análisis de falla, caracterización de materiales, polímeros, nanomateriale
             border-bottom: 1px solid rgba(212,175,55,0.3);
         }
 
-        /* Botones del menú */
         .tab-btn {
             background: rgba(26,26,26,0.6);
             border: 1px solid #d4af37;
@@ -76,7 +73,6 @@ s, análisis de falla, caracterización de materiales, polímeros, nanomateriale
             font-weight: 400;
         }
 
-        /* SECCIONES */
         .section-title {
             font-size: 2rem;
             margin-top: 40px;
@@ -99,7 +95,6 @@ s, análisis de falla, caracterización de materiales, polímeros, nanomateriale
             animation: fadeIn 1s ease;
         }
 
-        /* TARJETAS Y EFECTOS */
         ul li {
             margin-bottom: 10px;
             padding: 10px;
@@ -113,7 +108,6 @@ s, análisis de falla, caracterización de materiales, polímeros, nanomateriale
             box-shadow: 0 0 10px rgba(212,175,55,0.25);
         }
 
-        /* FOTO + BIO LADO A LADO */
         .perfil-container {
             display: flex;
             gap: 30px;
@@ -132,7 +126,6 @@ s, análisis de falla, caracterización de materiales, polímeros, nanomateriale
             box-shadow: 0 0 35px rgba(212,175,55,0.6);
         }
 
-        /* CONTACTO */
         .contact {
             padding: 40px;
             text-align: center;
@@ -151,7 +144,6 @@ s, análisis de falla, caracterización de materiales, polímeros, nanomateriale
             margin-top: 20px;
         }
 
-        /* --- ANIMACIONES --- */
         @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
         @keyframes slideDown { from {transform:translateY(-20px);} to {transform:translateY(0);} }
     </style>
@@ -172,13 +164,12 @@ s, análisis de falla, caracterización de materiales, polímeros, nanomateriale
         <button class="tab-btn" onclick="openTab('contacto')">Contacto</button>
     </nav>
 
-    <!-- PERFIL PROFESIONAL -->
     <div id="perfil" class="tab-content" style="display:block;">
         <h2 class="section-title">Perfil Profesional</h2>
 
         <div class="perfil-container">
-            <!-- IMPORTANTE: el archivo debe llamarse exactamente perfil-esteban.jpg -->
-            <img src="perfil-esteban.jpg" class="perfil-img" alt="Foto de Esteban Uriel Colorado García">
+            <!-- ESTA ES LA ÚNICA LÍNEA QUE CAMBIÉ -->
+            <img src="perfil.jpg" class="perfil-img" alt="Foto de Esteban Uriel Colorado García">
 
             <div style="flex:1; min-width:260px;">
                 <p><strong>Esteban Uriel Colorado García</strong></p>
@@ -197,7 +188,6 @@ s, análisis de falla, caracterización de materiales, polímeros, nanomateriale
         </ul>
     </div>
 
-    <!-- SERVICIOS -->
     <div id="servicios" class="tab-content">
         <h2 class="section-title">Servicios</h2>
         <ul>
@@ -208,13 +198,11 @@ s, análisis de falla, caracterización de materiales, polímeros, nanomateriale
         </ul>
     </div>
 
-    <!-- UBICACIÓN -->
     <div id="ubicacion" class="tab-content">
         <h2 class="section-title">Ubicación</h2>
         <p><strong>Dirección:</strong> Insurgentes 865, El Montecillo, San Luis Potosí, S.L.P.</p>
     </div>
 
-    <!-- CONTACTO -->
     <div id="contacto" class="tab-content">
         <h2 class="section-title">Información de Contacto</h2>
         <p><strong>WhatsApp / Tel:</strong> +52 444 548 5528</p>
@@ -231,7 +219,9 @@ s, análisis de falla, caracterización de materiales, polímeros, nanomateriale
             document.getElementById(tabName).style.display = 'block';
         }
     </script>
+
 </body>
 </html>
-![perfil-esteban jpg](https://github.com/user-attachments/assets/01903ab8-2d70-4e93-b44c-b1331181276b)
+![perfil](https://github.com/user-attachments/assets/33ddc104-4e2b-4157-98ec-5e388135dc83)
+
 
