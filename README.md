@@ -168,7 +168,8 @@
         <h2 class="section-title">Perfil Profesional</h2>
 
         <div class="perfil-container">
-            <!-- ESTA ES LA ÚNICA LÍNEA QUE CAMBIÉ -->
+
+            <!-- FOTO CORRECTA -->
             <img src="perfil.jpg" class="perfil-img" alt="Foto de Esteban Uriel Colorado García">
 
             <div style="flex:1; min-width:260px;">
@@ -222,6 +223,4 @@
 
 </body>
 </html>
-![perfil](https://github.com/user-attachments/assets/33ddc104-4e2b-4157-98ec-5e388135dc83)
-
-
+![perfil](https://github.com/user-attachments/assets/1502e6b5-2834-4cdb-a0b9-eacf6b2b6f0c)
