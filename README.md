@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
@@ -223,4 +222,4 @@
 
 </body>
 </html>
-![perfil](https://github.com/user-attachments/assets/1502e6b5-2834-4cdb-a0b9-eacf6b2b6f0c)
+
