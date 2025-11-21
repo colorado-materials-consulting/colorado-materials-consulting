@@ -22,6 +22,7 @@
             scroll-behavior: smooth;
         }
 
+        /* NAV */
         nav {
             position: fixed;
             top: 0;
@@ -46,6 +47,7 @@
             font-size: 1rem;
             transition: all 0.3s ease;
         }
+
         .tab-btn:hover {
             background: #d4af37;
             color: black;
@@ -65,7 +67,6 @@
             font-size: 2.8rem;
             color: #d4af37;
             margin-bottom: 10px;
-            animation: slideDown 1.2s ease;
         }
 
         h2 {
@@ -79,7 +80,6 @@
             text-align: center;
             color: #d4af37;
             font-family: 'Playfair Display', serif;
-            animation: fadeIn 1s ease;
         }
 
         .tab-content {
@@ -92,7 +92,6 @@
             border-radius: 20px;
             border: 1px solid rgba(212,175,55,0.3);
             box-shadow: 0 0 20px rgba(212,175,55,0.1);
-            animation: fadeIn 1s ease;
         }
 
         ul li {
@@ -114,27 +113,12 @@
             flex-wrap: wrap;
             align-items: flex-start;
         }
+
         .perfil-img {
             width: 260px;
             border-radius: 25px;
             border: 4px solid #d4af37;
             box-shadow: 0 0 20px rgba(212,175,55,0.4);
-            transition: 0.3s;
-        }
-        .perfil-img:hover {
-            transform: scale(1.03);
-            box-shadow: 0 0 35px rgba(212,175,55,0.6);
-        }
-
-        .contact {
-            padding: 40px;
-            text-align: center;
-            background: rgba(255,255,255,0.05);
-            border-top: 1px solid rgba(212,175,55,0.3);
-            margin-top: 60px;
-        }
-        .contact p {
-            margin: 8px;
         }
 
         footer {
@@ -143,9 +127,6 @@
             color: #777;
             margin-top: 20px;
         }
-
-        @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
-        @keyframes slideDown { from {transform:translateY(-20px);} to {transform:translateY(0);} }
     </style>
 </head>
 
@@ -157,13 +138,14 @@
         <p>Advanced Materials • Quality • Engineering Process Solutions</p>
     </header>
 
-    <nav style="display:flex; justify-content:center; margin-top:20px; gap:20px; padding:15px; background:#111; border-bottom:1px solid rgba(212,175,55,0.3);">
+    <nav>
         <button class="tab-btn" onclick="openTab('perfil')">Perfil</button>
         <button class="tab-btn" onclick="openTab('servicios')">Servicios</button>
         <button class="tab-btn" onclick="openTab('ubicacion')">Ubicación</button>
         <button class="tab-btn" onclick="openTab('contacto')">Contacto</button>
     </nav>
 
+    <!-- PERFIL -->
     <div id="perfil" class="tab-content" style="display:block;">
         <h2 class="section-title">Perfil Profesional</h2>
 
@@ -187,6 +169,7 @@
         </ul>
     </div>
 
+    <!-- SERVICIOS -->
     <div id="servicios" class="tab-content">
         <h2 class="section-title">Servicios</h2>
         <ul>
@@ -197,11 +180,48 @@
         </ul>
     </div>
 
+    <!-- UBICACIÓN COMPLETA -->
     <div id="ubicacion" class="tab-content">
         <h2 class="section-title">Ubicación</h2>
-        <p><strong>Dirección:</strong> Insurgentes 865, El Montecillo, San Luis Potosí, S.L.P.</p>
+
+        <p style="font-size:1.2rem; color:#d4af37; font-weight:bold;">
+            📍 Oficinas y Sala de Juntas – Lumiere Montecillo, SLP
+        </p>
+
+        <p><strong>Dirección:</strong> Calle Insurgentes 865, El Montecillo, San Luis Potosí, S.L.P.</p>
+
+        <!-- MAPA -->
+        <div style="margin-top:25px; display:flex; justify-content:center;">
+            <div style="width:100%; max-width:800px;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3695.2225075818105!2d-100.9662835!3d22.1556007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa1f6523c2c8f%3A0x3f318f3f41a9751!2sC.%20Insurgentes%20865%2C%20El%20Montecillo%2C%2078310%20San%20Luis%20Potos%C3%AD%2C%20S.L.P.!5e0!3m2!1ses!2smx!4v1763753604147!5m2!1ses!2smx"
+                    width="100%"
+                    height="350"
+                    style="border:0; border-radius:15px; box-shadow:0 0 18px rgba(212,175,55,0.35);"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <h3 style="color:#d4af37; margin-top:35px;">Galería del Área de Oficinas y Sala de Juntas</h3>
+
+        <!-- GALERÍA -->
+        <div style="
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap:20px;
+            margin-top:25px;
+        ">
+            <img src="terraza.jpg" style="width:100%; border-radius:15px; border:2px solid #d4af37;">
+            <img src="buda.jpg" style="width:100%; border-radius:15px; border:2px solid #d4af37;">
+            <img src="jardin.jpg" style="width:100%; border-radius:15px; border:2px solid #d4af37;">
+            <img src="sala.jpg" style="width:100%; border-radius:15px; border:2px solid #d4af37;">
+        </div>
     </div>
 
+    <!-- CONTACTO -->
     <div id="contacto" class="tab-content">
         <h2 class="section-title">Información de Contacto</h2>
         <p><strong>WhatsApp / Tel:</strong> +52 444 548 5528</p>
